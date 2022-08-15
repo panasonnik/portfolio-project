@@ -1,11 +1,12 @@
 :root {
   --primary-color: #d7e3fc;
   --highlight-color: #a1b7eb;
+  --background-color: #edf2fb;
   --header-font: "Nixie One", cursive;
   --paragraph-font: "Gruppo", cursive;
 }
 body {
-  background: #edf2fb;
+  background: var(--background-color);
 }
 
 h1 {
@@ -22,7 +23,7 @@ p {
   background-image: radial-gradient(
     ellipse farthest-corner at 2% 120%,
     var(--primary-color) 70%,
-    #edf2fb 70%
+    var(--background-color) 70%
   );
   padding: 180px 0 200px 100px;
 }
@@ -89,11 +90,13 @@ p {
   box-shadow: inset 0 -4em 0 0 var(--highlight-color);
   color: white;
 }
-
-.about-hero h1 {
-  font-size: 68px;
+.content {
+  margin-top: 60px;
 }
-.about-hero h2 {
+.content h1 {
+  font-size: 64px;
+}
+.content h2 {
   font-size: 30px;
 }
 .personal-photo {
@@ -125,13 +128,13 @@ p {
     font-size: 14px;
     padding-right: 6px;
   }
-  .about-hero h1 {
+  .content h1 {
     font-size: 40px;
   }
-  .about-hero h2 {
+  .content h2 {
     font-size: 26px;
   }
-  .about-hero p {
+  .content p {
     font-size: 18px;
   }
 }
