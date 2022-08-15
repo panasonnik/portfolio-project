@@ -1,15 +1,27 @@
+:root {
+  --primary-color: #d7e3fc;
+  --highlight-color: #a1b7eb;
+  --header-font: "Nixie One", cursive;
+  --paragraph-font: "Gruppo", cursive;
+}
 body {
   margin-top: 180px;
-  background: linear-gradient(90deg, #e9edc9 60%, #edf3c361 40%);
+  margin-bottom: 270px;
+
+  background-image: radial-gradient(
+    ellipse farthest-corner at 2% 120%,
+    var(--primary-color) 70%,
+    #edf2fb 70%
+  );
 }
 h1 {
-  font-family: "Nixie One", cursive;
+  font-family: var(--header-font);
   font-weight: bold;
   font-size: 80px;
   display: inline-block;
 }
 h2 {
-  font-family: "Gruppo", cursive;
+  font-family: var(--paragraph-font);
   font-size: 40px;
 }
 
@@ -28,17 +40,19 @@ h2 {
   }
 }
 .start-btn {
-  border: 4px solid #acb888;
-  border-radius: 14px;
-  background: #fefae0;
-  padding: 10px 40px;
-  font-family: "Gruppo", cursive;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-family: var(--paragraph-font);
   font-weight: bold;
-  font-size: 20px;
-  color: #6c754f;
+  line-height: 100px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  transition: all 0.4s ease-in-out;
 }
-.start-btn:hover {
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
-  border: 4px solid #fefae0;
-  color: #6c754f;
+.start-btn:hover,
+.start-btn:focus {
+  box-shadow: inset 0 -10em 0 0 var(--highlight-color);
+  color: white;
 }
