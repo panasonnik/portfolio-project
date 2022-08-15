@@ -28,7 +28,6 @@ p {
 .hero h1 {
   font-weight: bold;
   font-size: 80px;
-  display: inline-block;
 }
 .hero h2 {
   font-size: 40px;
@@ -69,6 +68,7 @@ p {
 }
 .project-description {
   margin: 30px 0 0 40px;
+  text-align: center;
 }
 .project-description p {
   line-height: 1.6;
@@ -87,4 +87,27 @@ p {
 .ptoject-btn:focus {
   box-shadow: inset 0 -4em 0 0 var(--highlight-color);
   color: white;
+}
+@media (max-width: 990px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+  .hero h2 {
+    font-size: 14px;
+  }
+  .hero {
+    text-align: center;
+  }
+  .project-description p {
+    font-size: 14px;
+    padding-right: 6px;
+  }
 }
