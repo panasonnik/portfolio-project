@@ -12,7 +12,6 @@ h1 {
   font-family: var(--header-font);
   font-weight: bold;
   font-size: 64px;
-  margin-top: 70px;
 }
 h2,
 p {
@@ -32,6 +31,8 @@ p {
     var(--primary-color) 70%,
     var(--background-color) 70%
   );
+}
+.hero-padding {
   padding: 180px 0 200px 100px;
 }
 .text-justify {
